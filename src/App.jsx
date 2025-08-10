@@ -1,30 +1,20 @@
 // import { useState } from "react";
 import Rating from "./components/Rating";
 
-// const Counter = () => {
-//   // const [count, setCount] = useState(() => {
-//   //   console.log('Init count state...');
-//   //   return 0;
-//   // });
-
-  
-
-//   return (
-//     <>
-//       <button onClick={() => 
-//       setCount((prevCount) => {
-//         console.log(prevCount)
-//         return prevCount + 1
-//       })}>Increment</button>
-//     </>
-//   )
-// }
 
 const App = () => {
   return (
     <>
-      <Rating/>
-      {/* <Counter/> */}
+      <Rating 
+      heading="How do you feel about react?"
+      feedbackMessages={[
+        'Hate it',
+        'Dislike it',
+        'Meh',
+        'Like it',
+        'Love it'
+      ]}
+      />
     </>
   )
 }
